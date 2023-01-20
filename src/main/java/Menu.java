@@ -11,6 +11,7 @@ public class Menu {
             System.out.println("========================");
             System.out.println("1. New game");
             System.out.println("2. Exit");
+            System.out.println("========================");
             menuIn = scanner.next();
             if ((int)menuIn.charAt(0) == 50) {
                 System.out.println("Game over");

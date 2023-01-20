@@ -23,10 +23,9 @@ public class GoGame {
                 count++;
             }
 
-            System.out.println("выводим виселицу");
             Gallows.print(count);
             System.out.println("неудачных попыток " + count);
-            System.out.println("Загаданное слово " + Arrays.toString(arOut));
+            System.out.println("Отгадываемое слово " + Arrays.toString(arOut));
         }
         System.out.println("Правильное слово " + Arrays.toString(arString));
         System.out.println("Конец игры");
