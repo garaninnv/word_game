@@ -7,17 +7,17 @@ public class Menu {
         Scanner scanner = new Scanner(System.in);
         String menuIn;
         while (startGame) {
-            System.out.println("Game menu");
+            System.out.println("Меню игры");
             System.out.println("========================");
-            System.out.println("1. New game");
-            System.out.println("2. Exit");
+            System.out.println("1. Новая игра");
+            System.out.println("2. Выход");
             System.out.println("========================");
             menuIn = scanner.next();
-            if ((int)menuIn.charAt(0) == 50) {
-                System.out.println("Game over");
+            if ((int) menuIn.charAt(0) == '2') {
+                System.out.println("Игра окончена");
                 startGame = false;
-            } else if ((int)menuIn.charAt(0) == 49) {
-                String[] chArray = Reader.word().split("");
+            } else if ((int) menuIn.charAt(0) == '1') {
+                String[] chArray = Reader.getWord().split("");
                 GoGame.go(chArray, scanner);
             } else
                 System.out.println("Вы ввели не корректный пункт меню, повторите попытку");
